@@ -68,6 +68,7 @@ module.exports = {
 
     new ExtractTextPlugin('[name].css')
   ],
+
   devServer: {
     historyApiFallback: true,
     stats: 'minimal'

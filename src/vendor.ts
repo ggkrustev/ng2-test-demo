@@ -8,3 +8,7 @@ import "@angular/router";
 
 // RxJS
 import "rxjs";
+
+// Kendo Angular
+import "@progress/kendo-angular-dropdowns";
+import "../node_modules/@progress/kendo-angular-dropdowns/dist/npm/css/main.css";
