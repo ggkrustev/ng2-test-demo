@@ -2,13 +2,13 @@
 
 Application using Kendo UI Angular 2 components
 
-The demo is based on [Angular 2 Webpack tutorial](https://angular.io/docs/ts/latest/guide/webpack.html)
+The demo is based on the [Angular 2 Webpack tutorial](https://angular.io/docs/ts/latest/guide/webpack.html)
 
 ## Details
 
 The demo features Kendo UI DropDowns for Angular 2.
 
-Testing configuration is not setup.
+Test configuration is not setup.
 
 ### Try it
 
