@@ -3,6 +3,7 @@ import { BrowserModule }  from "@angular/platform-browser";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 
 import { AppComponent } from "./app.component";
+import { PanelBarItemComponent } from "./panelbar-item.component";
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { AppComponent } from "./app.component";
     DropDownsModule
   ],
   declarations: [
-    AppComponent
+      AppComponent,
+      PanelBarItemComponent
   ],
   bootstrap: [ AppComponent ]
 })
