@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-// import "../../public/css/styles.css";
 
 @Component({
   selector: "my-app",
@@ -8,7 +7,7 @@ import { Component } from "@angular/core";
         main {
           padding: 1em;
           font-family: Arial, Helvetica, sans-serif;
-          /*text-align: center;*/
+          text-align: center;
           margin-top: 50px;
           display: block;
         }
