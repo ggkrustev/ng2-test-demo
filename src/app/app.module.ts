@@ -1,13 +1,15 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule }  from "@angular/platform-browser";
-import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
+import { LayoutModule } from "@progress/kendo-angular-layout";
+import { PopupModule } from "@progress/kendo-angular-popup";
 
 import { AppComponent } from "./app.component";
 
 @NgModule({
   imports: [
     BrowserModule,
-    DropDownsModule
+    LayoutModule,
+    PopupModule
   ],
   declarations: [
     AppComponent
