@@ -10,5 +10,7 @@ import "@angular/router";
 import "rxjs";
 
 // Kendo Angular
+import "@progress/kendo-angular-buttons";
+import "@progress/kendo-angular-dialog";
 import "@progress/kendo-angular-dropdowns";
-import "../node_modules/@progress/kendo-angular-dropdowns/dist/npm/css/main.css";
+import "../node_modules/@telerik/kendo-theme-default/dist/all.css";

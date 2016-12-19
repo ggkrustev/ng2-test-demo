@@ -1,26 +1,31 @@
 import { Component } from "@angular/core";
-// import "../../public/css/styles.css";
 
 @Component({
-  selector: "my-app",
-  template: `
-    <style>
-        main {
-          padding: 1em;
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: center;
-          margin-top: 50px;
-          display: block;
-        }
-    </style>
-    <main>
-      <h1>Hello from Angular 2 App with Webpack</h1>
-      <kendo-dropdownlist [data]="data">
-      </kendo-dropdownlist>
-    </main>
-  `
-})
+    selector: 'my-app',
+    template: `
+      <button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
 
+      <kendo-dialog title="Action required" *ngIf="opened" (close)="close('cancel')">
+          <p>Entropy happened.</p>
+          <p>Do you accept?</p>
+             <kendo-combobox [data]="[1,2,3,4,5,6,7]">
+        </kendo-combobox>
+          <kendo-dialog-actions>
+              <button kendoButton (click)="close('yes')" primary="true">Yes</button>
+              <button kendoButton (click)="close('no')">No</button>
+          </kendo-dialog-actions>
+      </kendo-dialog>
+    `
+})
 export class AppComponent {
-    data: any = [ 1, 2, 3, 4 ];
+    public opened: bool = true;
+
+    public close(status) {
+      console.log(`Dialog result: ${status}`);
+      this.opened = false;
+    }
+
+    public open() {
+      this.opened = true;
+    }
 }
