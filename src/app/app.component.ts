@@ -17,6 +17,8 @@ import { Component } from "@angular/core";
       <h1>Hello from Angular 2 App with Webpack</h1>
       <kendo-dropdownlist [data]="data">
       </kendo-dropdownlist>
+
+      <kendo-calendar></kendo-calendar>
     </main>
   `
 })

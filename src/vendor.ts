@@ -11,4 +11,5 @@ import "rxjs";
 
 // Kendo Angular
 import "@progress/kendo-angular-dropdowns";
-import "../node_modules/@progress/kendo-angular-dropdowns/dist/npm/css/main.css";
+import "@progress/kendo-angular-dateinputs";
+import "../node_modules/@progress/kendo-theme-default/dist/all.css";

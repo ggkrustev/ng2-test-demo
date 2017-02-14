@@ -53,6 +53,10 @@ module.exports = {
         test: /\.css$/,
         include: rootPath('src', 'app'),
         loader: 'raw'
+      },
+      {
+        test: /\.json/,
+        loader: 'json-loader'
       }
     ]
   },
