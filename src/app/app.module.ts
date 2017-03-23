@@ -13,10 +13,10 @@ load(
    require(`cldr-data/supplemental/currencyData.json`),
 
    // locale data
-   require(`cldr-data/main/de/numbers.json`),
-   require(`cldr-data/main/de/currencies.json`),
-   require(`cldr-data/main/de/ca-gregorian.json`),
-   require(`cldr-data/main/de/timeZoneNames.json`)
+   require(`cldr-data/main/en-GB/numbers.json`),
+   require(`cldr-data/main/en-GB/currencies.json`),
+   require(`cldr-data/main/en-GB/ca-gregorian.json`),
+   require(`cldr-data/main/en-GB/timeZoneNames.json`)
 );
 
 @NgModule({
@@ -28,7 +28,7 @@ load(
   declarations: [
     AppComponent
   ],
-  providers: [{ provide: LOCALE_ID, useValue: "de-DE" }],
+  providers: [{ provide: LOCALE_ID, useValue: "en-GB" }],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

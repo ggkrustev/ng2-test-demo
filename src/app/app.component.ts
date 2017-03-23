@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { IntlService } from "@progress/kendo-angular-intl";
 // import "../../public/css/styles.css";
 
 @Component({
@@ -15,14 +16,15 @@ import { Component } from "@angular/core";
     </style>
     <main>
       <h1>Hello from Angular 2 App with Webpack</h1>
-      <kendo-dropdownlist [data]="data">
-      </kendo-dropdownlist>
 
-      <kendo-calendar></kendo-calendar>
+        '{{value}}' as currency: {{ intl.formatNumber(value, "c") }}
+        <br />
+        '{{value}}' as percentage: {{ intl.formatNumber(value, "p") }}
     </main>
   `
 })
 
 export class AppComponent {
-    data: any = [ 1, 2, 3, 4 ];
+    public value: number = 42;
+    constructor(public intl: IntlService) {}
 }
