@@ -15,10 +15,12 @@ import { Component } from "@angular/core";
     </style>
     <main>
       <h1>Hello from Angular 2 App with Webpack</h1>
-      <kendo-dropdownlist [data]="data">
+      <label [for]="ddl">DDL:</label>
+      <kendo-dropdownlist #ddl [data]="data">
       </kendo-dropdownlist>
 
-      <kendo-calendar></kendo-calendar>
+      <label [for]="calendar">Calendar:</label>
+      <kendo-calendar #calendar></kendo-calendar>
     </main>
   `
 })

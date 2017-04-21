@@ -3,6 +3,7 @@ import { BrowserModule }  from "@angular/platform-browser";
 import { BrowserAnimationsModule }  from "@angular/platform-browser/animations";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
+import { LabelModule } from "@progress/kendo-angular-label";
 import { load } from "@progress/kendo-angular-intl";
 
 import { AppComponent } from "./app.component";
@@ -25,7 +26,8 @@ load(
     BrowserModule,
     BrowserAnimationsModule,
     DropDownsModule,
-    DateInputsModule
+      DateInputsModule,
+      LabelModule
   ],
   declarations: [
     AppComponent
