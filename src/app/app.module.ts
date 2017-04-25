@@ -1,10 +1,11 @@
 import { LOCALE_ID, NgModule } from "@angular/core";
 import { BrowserModule }  from "@angular/platform-browser";
 import { BrowserAnimationsModule }  from "@angular/platform-browser/animations";
+import { FormsModule }  from "@angular/forms";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
 import { LabelModule } from "@progress/kendo-angular-label";
-import { load } from "@progress/kendo-angular-intl";
+import { load, IntlModule } from "@progress/kendo-angular-intl";
 
 import { AppComponent } from "./app.component";
 
@@ -23,9 +24,11 @@ load(
 
 @NgModule({
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    DropDownsModule,
+      BrowserModule,
+      BrowserAnimationsModule,
+      FormsModule,
+      IntlModule,
+      DropDownsModule,
       DateInputsModule,
       LabelModule
   ],
